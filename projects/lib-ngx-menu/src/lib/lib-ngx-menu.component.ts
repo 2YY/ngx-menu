@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-lib-ngx-menu',
+  selector: 'lib-ngx-menu',
   template: `
     <p>
       lib-ngx-menu works!
