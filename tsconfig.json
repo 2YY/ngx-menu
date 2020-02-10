@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "lib-ngx-menu": [
+        "dist/lib-ngx-menu/lib-ngx-menu",
+        "dist/lib-ngx-menu"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
