@@ -1,6 +1,8 @@
 # NgxMenu
 
 ![CI](https://github.com/2YY/ngx-menu/workflows/CI/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8855ddde0fd5e70ca6a4/maintainability)](https://codeclimate.com/github/2YY/ngx-menu/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8855ddde0fd5e70ca6a4/test_coverage)](https://codeclimate.com/github/2YY/ngx-menu/test_coverage)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
