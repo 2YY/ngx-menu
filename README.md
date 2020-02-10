@@ -1,5 +1,7 @@
 # NgxMenu
 
+![CI](https://github.com/2YY/ngx-menu/workflows/CI/badge.svg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
 ## Development server
