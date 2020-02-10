@@ -1,0 +1,47 @@
+.btn-trigger {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating-points {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  transform: translateY(-50%);
+  &__msg {
+    font-size: 1.4rem;
+  }
+  &__ico-rate {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.menu-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 4rem 4rem;
+  text-align: center;
+  background: #fff;
+  border-radius: .3rem;
+  transform: translate(-50%, -50%);
+  &__hdg {
+    font-size: 1.4rem;
+    &-code {
+      display: inline-blocx;
+      margin-right: .3rem;
+      padding: 0 .5rem .2rem;
+      color: #fff;
+      font-family: monospace;
+      background: #333;
+      border-radius: .3rem;
+    }
+  }
+}
