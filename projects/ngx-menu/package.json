@@ -1,0 +1,14 @@
+{
+  "name": "2yy-ngx-menu",
+  "version": "0.0.0",
+  "homepage": "https://github.com/2YY/ngx-menu",
+  "repository": "https://github.com/2YY/ngx-menu",
+	"license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^10.0.14",
+    "@angular/core": "^10.0.14"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
