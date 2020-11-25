@@ -1,30 +1,36 @@
 # NgxMenu
+
 ![Test](https://github.com/2YY/ngx-menu/workflows/Test/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8855ddde0fd5e70ca6a4/maintainability)](https://codeclimate.com/github/2YY/ngx-menu/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8855ddde0fd5e70ca6a4/test_coverage)](https://codeclimate.com/github/2YY/ngx-menu/test_coverage)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm i 2yy-ngx-menu`
 
-## Code scaffolding
+## Motivation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Use [FocusKeyManager]() with your own styles. (Fully customizable)
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Wrap your menu items with `lib-ngx-menu`.
+2. Add `libNgxMenuItem` directive to your menu items.
 
-## Running unit tests
+### Example
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    <lib-ngx-menu>
+      <button #button1 libNgxMenuItem (focusReceived)="lastFocusedButtonNumber = 1">Button 1</button>
+      <button libNgxMenuItem (focusReceived)="lastFocusedButtonNumber = 2">Button 2</button>
+      <button libNgxMenuItem (focusReceived)="lastFocusedButtonNumber = 3">Button 3</button>
+      <button libNgxMenuItem (focusReceived)="lastFocusedButtonNumber = 4">Button 4</button>
+      <button libNgxMenuItem (focusReceived)="lastFocusedButtonNumber = 5">Button 5</button>
+    </lib-ngx-menu>
 
-## Running end-to-end tests
+Your can customize there buttons style freely.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[MIT License](./LICENSE)
