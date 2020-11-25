@@ -52,13 +52,7 @@ describe('NgxMenuItemDirective', () => {
 	it('should call focusReceived method when focused', () => {
 		const spy = spyOn(component, 'onFocusReceived');
 
-		const elButton = fixture.debugElement.query(By.css('#btn'));
-		expect(elButton).not.toBeNull();
-
-		const directive = elButton.injector.get(NgxMenuItemDirective);
-		expect(directive).not.toBeNull();
-
-		directive.focus();
+		fixture.debugElement.query(By.css('#btn')).injector.get(NgxMenuItemDirective).focus();
 		fixture.detectChanges();
 
 		expect(spy).toHaveBeenCalledTimes(1);
