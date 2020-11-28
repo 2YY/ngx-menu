@@ -21,4 +21,9 @@ describe('NgxMenuComponent', () => {
 	it('should create', () => {
 		expect(component).toBeTruthy();
 	});
+
+	it('should has FocusKeyManager instance', () => {
+		component.ngAfterViewInit();
+		expect(component.focusKeyManagerMenuItems).not.toBe(null);
+	});
 });

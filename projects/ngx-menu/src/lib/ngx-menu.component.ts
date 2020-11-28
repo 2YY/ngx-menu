@@ -10,7 +10,7 @@ import { NgxMenuItemDirective } from './ngx-menu-item.directive';
 export class NgxMenuComponent implements AfterViewInit {
 
 	@ContentChildren(NgxMenuItemDirective, {read: NgxMenuItemDirective}) menuItemsRef: QueryList<NgxMenuItemDirective>;
-	focusKeyManagerMenuItems: FocusKeyManager<NgxMenuItemDirective>;
+	focusKeyManagerMenuItems: FocusKeyManager<NgxMenuItemDirective> | null = null;
 
 	ngAfterViewInit(): void {
 		this.focusKeyManagerMenuItems = new FocusKeyManager<NgxMenuItemDirective>(this.menuItemsRef).withWrap();
